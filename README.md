@@ -22,9 +22,56 @@ Welcome to the Hogwarts Shell, a simple command-line interface inspired by the m
     Help System: Access command usage information.
     Friendly Messages: Enjoy welcoming and exit messages with a magical touch.   
 # Commands    
-# "LINEAGE" :
+## "lineage" :
  - Displays the current working directory.
  - Outputs the absolute path of the current working directory .
-   # Usage :
-   ```bash lineage ```
+   ## Usage :
+   ```lineage ```
+
+## "mirror" :
+ - Echoes the provided arguments.
+ - Prints the given text to the terminal. If no text is provided, it prints an empty line.
+   ## Usage :
+   ```mirror <string>```
+
+ ## "geminio" :
+  - Copies a file from the source to the destination.
+  - Copies the file specified by <source> to the path specified by <destination>. If any errors occur (e.g., file not found), they are reported.
+    ## Usage :
+    ```geminio <Source> <Destination>```
+
+ ## "mobiliarbus" :
+  - Moves a file from the source to the destination.
+  - Moves the file specified by <source> to the path specified by <destination>. If any errors occur, they are reported.
+    ## Usage :
+    ```mobiliarbus <Source> <Destination>```
+
+ ## "voldemort" :
+  - Exits the shell with a custom message.
+  - Prints a special exit message and terminates the shell.
+    ## Usage :
+    ```voldemort```
+
+  ## "diary" :
+   - Displays help information for each command.
+   - Provides a brief overview and usage instructions for each available command.
+     ## Usage :
+     ```diary```
+     ```diary <Commend Name>```
+
+   # Installation
+   1. Clone the Repository:
+   ```git clone https://github.com/mohamedaymankills/HOGWARTS-Shell```
+   ```cd HOGWARTS-Shell```
+   2. Compile the Shell:
+   ```gcc -o Hogwarts_Shell Hogwarts_Shell.c Lineage.c Mirror.c Geminio.c Mobiliarbus.c Diary.c```
+   3. Run the Shell:
+   ```./Hogwarts_Shell```
+
+# Usage 
+Once you have the shell running, you can start typing commands at the HOGWARTS---> prompt. Use the commands listed above to interact with the shell. For example, you can use lineage to see your current directory, mirror to print text, and geminio to copy files.
+
+
+   
+    
 
