@@ -26,7 +26,5 @@ Welcome to the Hogwarts Shell, a simple command-line interface inspired by the m
  - Displays the current working directory.
  - Outputs the absolute path of the current working directory .
    # Usage :
-   ```bash
-lineage
-```
+   ```bash lineage ```
 
