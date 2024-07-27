@@ -71,6 +71,22 @@ Welcome to the Hogwarts Shell, a simple command-line interface inspired by the m
 # Usage 
 Once you have the shell running, you can start typing commands at the HOGWARTS---> prompt. Use the commands listed above to interact with the shell. For example, you can use lineage to see your current directory, mirror to print text, and geminio to copy files.
 
+# Customization
+You can customize the shell by modifying the source code. Here are some points where you might want to make changes:
+
+    Welcome Message: Modify the print_welcome_message function in main.c to change the shell's startup message.
+    Exit Message: Customize the execute_voldemort function to change the exit message.
+    Command Implementations: Update or add new commands by editing or adding new .c and .h files.
+
+# Troubleshooting 
+The SPELL not recognized ( Command Not Recognized ) : Ensure the command is correctly typed and listed in the commands array in main.c.
+File Errors: Check file paths and permissions when using geminio and mobiliarbus.
+Compilation Issues: Ensure all required files are included and that you are using a compatible compiler.
+
+# License
+[Linkedin]()
+
+
 
    
     
