@@ -11,7 +11,6 @@ Welcome to the Hogwarts Shell, a simple command-line interface inspired by the m
         - mobiliarbus
         - voldemort
         - diary
-        - help
 
      Installation
      Usage
