@@ -26,6 +26,7 @@ Welcome to the Hogwarts Shell, a simple command-line interface inspired by the m
 ![2](https://github.com/mohamedaymankills/HOGWARTS-Shell/blob/main/Readme_Images/lineage.png)
  - Displays the current working directory.
  - Outputs the absolute path of the current working directory .
+ - lineage = pwd
    ## Usage :
    ```lineage ```
 
@@ -33,6 +34,7 @@ Welcome to the Hogwarts Shell, a simple command-line interface inspired by the m
 ![3](https://github.com/mohamedaymankills/HOGWARTS-Shell/blob/main/Readme_Images/mirror.png)
  - Echoes the provided arguments.
  - Prints the given text to the terminal. If no text is provided, it prints an empty line.
+ - mirror = echo
    ## Usage :
    ```mirror <string>```
 
@@ -40,6 +42,7 @@ Welcome to the Hogwarts Shell, a simple command-line interface inspired by the m
  ![4](https://github.com/mohamedaymankills/HOGWARTS-Shell/blob/main/Readme_Images/geminio.png)
   - Copies a file from the source to the destination.
   - Copies the file specified by <source> to the path specified by <destination>. If any errors occur (e.g., file not found), they are reported.
+  - geminio = cp
     ## Usage :
     ```geminio <Source> <Destination>```
 
@@ -47,6 +50,7 @@ Welcome to the Hogwarts Shell, a simple command-line interface inspired by the m
  ![5](https://github.com/mohamedaymankills/HOGWARTS-Shell/blob/main/Readme_Images/mobiliarbus.png)
   - Moves a file from the source to the destination.
   - Moves the file specified by <source> to the path specified by <destination>. If any errors occur, they are reported.
+  - mobiliarbus = mv
     ## Usage :
     ```mobiliarbus <Source> <Destination>```
 
@@ -54,6 +58,7 @@ Welcome to the Hogwarts Shell, a simple command-line interface inspired by the m
  ![6](https://github.com/mohamedaymankills/HOGWARTS-Shell/blob/main/Readme_Images/voldemort.png)
   - Exits the shell with a custom message.
   - Prints a special exit message and terminates the shell.
+  - voldemort = exit
     ## Usage :
     ```voldemort```
 
@@ -61,6 +66,7 @@ Welcome to the Hogwarts Shell, a simple command-line interface inspired by the m
   ![7](https://github.com/mohamedaymankills/HOGWARTS-Shell/blob/main/Readme_Images/diary.png)
    - Displays help information for each command.
    - Provides a brief overview and usage instructions for each available command.
+   - diary = help
      ## Usage :
      ```diary```
      ```diary <Commend Name>```
