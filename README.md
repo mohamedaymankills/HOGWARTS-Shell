@@ -11,6 +11,10 @@ Welcome to the Hogwarts Shell, a simple command-line interface inspired by the m
         - mobiliarbus
         - voldemort
         - diary
+        - apparition
+        - school
+        - revelio
+      - All External commands   
 
      Installation
      Usage
@@ -75,7 +79,7 @@ Welcome to the Hogwarts Shell, a simple command-line interface inspired by the m
    -  Allows you to display your current environment or run a specified command in a changed environment.
    - revelio = env
      ## Usage :
-     ```revelio```         
+     ```revelio```  
 
  ## "voldemort" :
  ![6](https://github.com/mohamedaymankills/HOGWARTS-Shell/blob/main/Readme_Images/voldemort.png)
@@ -94,13 +98,24 @@ Welcome to the Hogwarts Shell, a simple command-line interface inspired by the m
      ```diary```
      ```diary <Commend Name>```
 
+
+   # External Commands :
+  ![8](https://github.com/mohamedaymankills/HOGWARTS-Shell/blob/main/Readme_Images/extrenla.png)
+   - all External Commands With them real names and Definitions .
+   - Like echo , ps , ls , cp and mv ....etc  .
+     ## Usage :
+     ```HOGWARTS --->echo Mohamed```
+     ```HOGWARTS --->ps```
+     ```HOGWARTS --->ls```         
+
    # Installation
    1. Clone the Repository:
    ```git clone https://github.com/mohamedaymankills/HOGWARTS-Shell```
    ```cd HOGWARTS-Shell```
-   2. Compile the Shell:
+   2. Separate all folders to make them files only (folders for just Organization)
+   3. Compile the Shell:
    ```gcc -o Hogwarts_Shell Hogwarts_Shell.c Lineage.c Mirror.c Geminio.c Mobiliarbus.c Diary.c```
-   3. Run the Shell:
+   4. Run the Shell:
    ```./Hogwarts_Shell```
 
 # Usage 
