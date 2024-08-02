@@ -1,7 +1,7 @@
 /************************ Author : Mohamed Ayman ************************/
 /************************ Name   : Diary.c       ************************/
 /************************ Date   : 23-7-2024     ************************/
-/************************ Version: 0.0.1         ************************/
+/************************ Version: 0.0.2         ************************/
 
 
 /************************ [ DIARY ----------> HELP ] **********************/
@@ -18,6 +18,9 @@ void execute_diary(char *args) {
         printf("  mobiliarbus    - Move or rename files\n");
         printf("  voldemort      - Exit the shell\n");
         printf("  diary          - Display this help message\n");
+        printf("  apparition     - Moving in directories \n");
+        printf("  school         - Find the Type of commands if Internal or External\n");
+        printf("  revelio        - print all the environment variables \n");
         printf("  Use 'diary <command>' for detailed information on a command.\n");
         return;
     }
@@ -108,8 +111,54 @@ void execute_diary(char *args) {
         
         
 
-    } else {
+    } else if (strcmp(args, "apparition") == 0) {
+        printf(        " █████╗ ██████╗ ██████╗  █████╗ ██████╗ ██╗████████╗██╗ ██████╗ ███╗   ██╗\n"
+                       "██╔══██╗██╔══██╗██╔══██╗██╔══██╗██╔══██╗██║╚══██╔══╝██║██╔═══██╗████╗  ██║ \n"
+                       "███████║██████╔╝██████╔╝███████║██████╔╝██║   ██║   ██║██║   ██║██╔██╗ ██║\n"
+                       "██╔══██║██╔═══╝ ██╔═══╝ ██╔══██║██╔══██╗██║   ██║   ██║██║   ██║██║╚██╗██║ \n"
+                       "██║  ██║██║     ██║     ██║  ██║██║  ██║██║   ██║   ██║╚██████╔╝██║ ╚████║ \n"
+                       "╚═╝  ╚═╝╚═╝     ╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝   \n"
+                       "                                                                             \n"      );
+      
+        printf("apparition: Moving in directories \n");
+        printf("apparition ------------------> cd\n");
+        printf("Usage: apparition </path/>\n");
+        
+        
+
+    } else if (strcmp(args, "school") == 0) {
+        printf(        "███████╗ ██████╗██╗  ██╗ ██████╗  ██████╗ ██╗      \n"
+                       "██╔════╝██╔════╝██║  ██║██╔═══██╗██╔═══██╗██║     \n"
+                       "███████╗██║     ███████║██║   ██║██║   ██║██║     \n"
+                       "╚════██║██║     ██╔══██║██║   ██║██║   ██║██║     \n"
+                       "███████║╚██████╗██║  ██║╚██████╔╝╚██████╔╝███████╗\n"
+                       "╚══════╝ ╚═════╝╚═╝  ╚═╝ ╚═════╝  ╚═════╝ ╚══════╝\n"
+                       "                                                                             \n"      );
+      
+        printf("school: Find the Type of commands if Internal or External\n");
+        printf("school ------------------> type\n");
+        printf("Usage: school <command>\n");
+        
+        
+
+    } else if (strcmp(args, "revelio") == 0) {
+        printf(        "██████╗ ███████╗██╗   ██╗███████╗██╗     ██╗ ██████╗   \n"
+                       "██╔══██╗██╔════╝██║   ██║██╔════╝██║     ██║██╔═══██╗ \n"
+                       "██████╔╝█████╗  ██║   ██║█████╗  ██║     ██║██║   ██║  \n"
+                       "██╔══██╗██╔══╝  ╚██╗ ██╔╝██╔══╝  ██║     ██║██║   ██║  \n"
+                       "██║  ██║███████╗ ╚████╔╝ ███████╗███████╗██║╚██████╔╝ \n"
+                       "╚═╝  ╚═╝╚══════╝  ╚═══╝  ╚══════╝╚══════╝╚═╝ ╚═════╝ \n"
+                       "                                                                             \n"      );
+      
+        printf("revelio: print all the environment variables \n");
+        printf("revelio ------------------> env\n");
+        printf("Usage: revelio \n");
+        
+        
+
+    }
+    else 
+    {
         printf("Unknown command: %s\n", args);
     }
 }
-
