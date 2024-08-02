@@ -1,20 +1,25 @@
 /************************ Author : Mohamed Ayman    ************************/
 /************************ Name   : HOGWARTS_Sheel.c ************************/
 /************************ Date   : 23-7-2024        ************************/
-/************************ Version: 0.0.1            ************************/
+/************************ Version: 0.1.2            ************************/
 
 
 
 /*************************** Includes ***************************/ 
-#include <stdio.h>     // Include the standard input/output library for printf, perror, etc.
-#include <string.h>    // Include the string handling library for string manipulation functions.
-#include <unistd.h>    // Include the POSIX API for system calls such as read and write.
-#include <stdlib.h>    // Include the standard library for general functions such as exit.
-#include "Lineage.h"   // Include the header file for the Lineage command.
-#include "Mirror.h"    // Include the header file for the Mirror command.
-#include "Geminio.h"   // Include the header file for the Geminio command.
+#include <stdio.h>       // Include the standard input/output library for printf, perror, etc.
+#include <string.h>      // Include the string handling library for string manipulation functions.
+#include <unistd.h>      // Include the POSIX API for system calls such as read and write.
+#include <stdlib.h>      // Include the standard library for general functions such as exit.
+#include "Lineage.h"     // Include the header file for the Lineage command.
+#include "Mirror.h"      // Include the header file for the Mirror command.
+#include "Geminio.h"     // Include the header file for the Geminio command.
 #include "Mobiliarbus.h" // Include the header file for the Mobiliarbus command.
-#include "Diary.h"     // Include the header file for the Diary command.
+#include "Diary.h"       // Include the header file for the Diary command.
+#include "Apparition.h"  // Include the header file for the Apparition command.
+#include "Revelio.h"     // Include the header file for the Revelio command.
+#include "School.h"      // Include the header file for the School command.
+#include "External.h"    // Include the header file for the Exterlnal command.  
+
 
 
 /*************************** Definetions ***************************/ 
@@ -71,13 +76,16 @@ int main(void) {
 
     // Define the command dispatch table with command names and their corresponding functions.
     command_entry commands[] = {
-        {"lineage", execute_lineage},      // Mapping for 'lineage' command.
-        {"mirror", execute_mirror},        // Mapping for 'mirror' command.
-        {"geminio", execute_geminio},      // Mapping for 'geminio' command.
+        {"lineage", execute_lineage},         // Mapping for 'lineage' command.
+        {"mirror", execute_mirror},           // Mapping for 'mirror' command.
+        {"geminio", execute_geminio},         // Mapping for 'geminio' command.
         {"mobiliarbus", execute_mobiliarbus}, // Mapping for 'mobiliarbus' command.
-        {"voldemort", execute_voldemort},  // Mapping for 'voldemort' command.
-        {"diary", execute_diary},          // Mapping for 'diary' command.
-        {NULL, execute_unknown}            // Default handler for unknown commands. This must be the last entry.
+        {"voldemort", execute_voldemort},     // Mapping for 'voldemort' command.
+        {"diary", execute_diary},             // Mapping for 'diary' command.
+        {"apparition", execute_apparition},   // Mapping for 'apparition' command.
+        {"revelio", execute_revelio},         // Mapping for 'revelio' command.
+        {"school", execute_school},           // Mapping for 'school' command.    
+        {NULL, execute_unknown}               // Default handler for unknown commands. This must be the last entry.
     };
 
     while (1) {    
@@ -98,21 +106,26 @@ int main(void) {
 
         if (token != NULL) {
             int i = 0;
+            int found = 0;
             while (commands[i].name != NULL) {
                 if (strcmp(token, commands[i].name) == 0) {
                     commands[i].func(args);  // Call the function associated with the command.
+                    found = 1;
                     break;
                 }
                 i++;
             }
 
             // If no command matches, execute the unknown command handler.
-            if (commands[i].name == NULL) {
-                execute_unknown(args);
-            }
+            if (!found) {
+                // Attempt to execute as an external command
+                if (execute_external(token, args) == -1) {
+                    execute_unknown(args);
+                }           
         }
     }
-
+}
     return 0; // Return 0 indicating successful completion (though the loop is infinite).
 }
+
 
