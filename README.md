@@ -114,7 +114,7 @@ Welcome to the Hogwarts Shell, a simple command-line interface inspired by the m
    ```cd HOGWARTS-Shell```
    2. Separate all folders to make them files only (folders for just Organization)
    3. Compile the Shell:
-   ```gcc -o Hogwarts_Shell Hogwarts_Shell.c Lineage.c Mirror.c Geminio.c Mobiliarbus.c Diary.c```
+   ```gcc -o Hogwarts_Shell Hogwarts_Shell.c Lineage.c Mirror.c Geminio.c Mobiliarbus.c Diary.c Revelio.c School.c Apparition.c```
    4. Run the Shell:
    ```./Hogwarts_Shell```
 
