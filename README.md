@@ -53,6 +53,30 @@ Welcome to the Hogwarts Shell, a simple command-line interface inspired by the m
     ## Usage :
     ```mobiliarbus <Source> <Destination>```
 
+  ## "apparition" :
+  ![9](https://github.com/mohamedaymankills/HOGWARTS-Shell/blob/main/Readme_Images/apparition.png)
+   - Used to change directories.
+   - This command will take you to the 'Documents' directory by its PATH.
+   - apparition = cd
+     ## Usage :
+     ```apparition </path/>```
+    
+  ## "school" :
+  ![8](https://github.com/mohamedaymankills/HOGWARTS-Shell/blob/main/Readme_Images/school.png)
+   - Find the type of command if its Internal or External .
+   - Describes how its arguments would be interpreted if used as command names.
+   - school = type
+     ## Usage :
+     ```school <command>```
+
+  ## "revelio" :
+  ![8](https://github.com/mohamedaymankills/HOGWARTS-Shell/blob/main/Readme_Images/revelio.png)
+   - Print all Enviroment Variables .
+   -  Allows you to display your current environment or run a specified command in a changed environment.
+   - revelio = env
+     ## Usage :
+     ```revelio```         
+
  ## "voldemort" :
  ![6](https://github.com/mohamedaymankills/HOGWARTS-Shell/blob/main/Readme_Images/voldemort.png)
   - Exits the shell with a custom message.
