@@ -3,7 +3,9 @@
 Welcome to the Hogwarts Shell, a simple command-line interface inspired by the magical world of Harry Potter. This shell supports various commands to mimic a basic Unix shell environment with a touch of wizardry. Below is a guide to help you get started with the Hogwarts Shell, including its commands, functionalities, and how to use it.
 
 # Table of Contents
-    Features
+    Features 
+        - Redirection 
+        - pipelining
     Commands
         - lineage
         - mirror
@@ -14,6 +16,8 @@ Welcome to the Hogwarts Shell, a simple command-line interface inspired by the m
         - apparition
         - school
         - revelio
+        - showme
+        - tempus
       - All External commands   
 
      Installation
@@ -74,7 +78,7 @@ Welcome to the Hogwarts Shell, a simple command-line interface inspired by the m
      ```school <command>```
 
   ## "revelio" :
-  ![8](https://github.com/mohamedaymankills/HOGWARTS-Shell/blob/main/Readme_Images/revelio.png)
+  ![10](https://github.com/mohamedaymankills/HOGWARTS-Shell/blob/main/Readme_Images/revelio.png)
    - Print all Enviroment Variables .
    -  Allows you to display your current environment or run a specified command in a changed environment.
    - revelio = env
@@ -99,8 +103,27 @@ Welcome to the Hogwarts Shell, a simple command-line interface inspired by the m
      ```diary <Commend Name>```
 
 
+  ## "showme" :
+  ![11](https://github.com/mohamedaymankills/HOGWARTS-Shell/blob/main/Readme_Images/showme.png)
+   - Displays help information for each command.
+   - Allows you to check for memory RAM on your system or to check the memory statics of the Linux operating system.
+   - showme = free
+     ## Usage :
+     ```showme```
+     
+          
+  ## "tempus" :
+  ![13](https://github.com/mohamedaymankills/HOGWARTS-Shell/blob/main/Readme_Images/tempus.png)
+   - Displays help information for each command.
+   - Displays the current time, the system's uptime, the number of users,.
+   - tempus = uptime
+     ## Usage :
+     ```tempus```
+
+     
+
    # External Commands :
-  ![8](https://github.com/mohamedaymankills/HOGWARTS-Shell/blob/main/Readme_Images/extrenla.png)
+  ![12](https://github.com/mohamedaymankills/HOGWARTS-Shell/blob/main/Readme_Images/extrenla.png)
    - all External Commands With them real names and Definitions .
    - Like echo , ps , ls , cp and mv ....etc  .
      ## Usage :
@@ -114,7 +137,7 @@ Welcome to the Hogwarts Shell, a simple command-line interface inspired by the m
    ```cd HOGWARTS-Shell```
    2. Separate all folders to make them files only (folders for just Organization)
    3. Compile the Shell:
-   ```gcc -o Hogwarts_Shell Hogwarts_Shell.c Lineage.c Mirror.c Geminio.c Mobiliarbus.c Diary.c Revelio.c School.c Apparition.c```
+   ```gcc -o Hogwarts_Shell Hogwarts_Shell.c Lineage.c Mirror.c Geminio.c Mobiliarbus.c Diary.c Revelio.c School.c Apparition.c Tempus.c Showme.c```
    4. Run the Shell:
    ```./Hogwarts_Shell```
 
